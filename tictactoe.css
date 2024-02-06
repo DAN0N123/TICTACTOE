@@ -1,0 +1,49 @@
+.bigbox{
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    padding-top: 50px;
+    grid-template-rows: 100vh;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 40vw;
+    height: 80vh;
+    gap: 3px;
+    background-color: black;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.tile{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile:hover{
+    cursor: pointer;
+}
+
+.tile > img{
+    display: flex;
+    width: 200px;
+    pointer-events: none
+}
+
+.scoreboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    grid-column: 1/2;
+    width: 60%;
+    grid-row: 1/2;
+    height: 20%;
+    margin-left: 20px;
+}
+
